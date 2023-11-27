@@ -5,7 +5,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   
   
   // Configuration de la connexion à la base de données MySQL
-  $servername = "127.0.0.1";
+  $servername = "mysql_listedecourse";
+  $port = "3306";
   $username = "root";
   $password = ".etml-";
   $dbname = "db_listedecourse";
@@ -13,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   try 
   {
     // Créez une connexion PDO à la base de données MySQL
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
     
     // Configurez PDO pour renvoyer les erreurs SQL
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
