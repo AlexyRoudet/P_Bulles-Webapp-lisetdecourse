@@ -35,7 +35,7 @@
 	                require_once('./ressources/php/get_element.php');
                 ?>
 
-                <form id="formulaire" action="./ressources/php/reset.php" method="post">
+                <form id="bouton_reset" action="./ressources/php/reset.php" method="post">
                 <input type="submit" value="nettoyer la liste">
                 </form>
 

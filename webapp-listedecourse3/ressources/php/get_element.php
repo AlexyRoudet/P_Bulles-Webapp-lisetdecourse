@@ -20,7 +20,7 @@ try {
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     // Afficher les résultats
-    http_response_code(200);
+    //http_response_code(200);
     foreach ($results as $row) {
         echo $row['eleElement'] . '<br>';
     }
@@ -29,8 +29,8 @@ try {
     $conn = null;
 
     //redirige vers la page d'origine
-    header('Location: ' . '../../index.php');
-    exit;
+    //header('Location: ' . '../../index.php');
+    //exit;
 }
 catch(PDOException $e) 
 {
