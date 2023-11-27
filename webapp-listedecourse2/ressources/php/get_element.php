@@ -1,6 +1,7 @@
 <?php
 // Configuration de la connexion à la base de données MySQL
 $servername = "127.0.0.1";
+$port = "3333";
 $username = "root";
 $password = "root";
 $dbname = "db_listedecourse";
