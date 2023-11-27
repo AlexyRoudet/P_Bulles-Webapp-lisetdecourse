@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     try {
         // Créez une connexion PDO à la base de données MySQL
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
 
         // Préparer la requête SQL
         $stmt = $conn->prepare("TRUNCATE t_element");

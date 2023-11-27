@@ -8,7 +8,7 @@ $dbname = "db_listedecourse";
 
 try {
     // Créez une connexion PDO à la base de données MySQL
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
 
     // Préparer la requête SQL
     $stmt = $conn->prepare("SELECT eleElement FROM t_element");
