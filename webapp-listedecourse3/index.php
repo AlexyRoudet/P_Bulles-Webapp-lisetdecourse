@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Gestionnaire d'écoute</title>
+        <title>Liste de Course</title>
         <link href="./ressources/css/style.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
